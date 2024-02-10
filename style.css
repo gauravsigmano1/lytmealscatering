@@ -1,0 +1,123 @@
+*{
+    font-family:'Trebuchet MS';
+}
+
+.row{
+    margin-bottom: 50px;
+}
+
+.client img{
+    margin: 10px;
+    height: 100px;
+}
+
+.client h2{
+    margin: 20px;
+    font-family: Baskerville Old Face;
+    font-weight: bold;
+}
+
+.title .offerings img{
+    width: 60%;
+}
+
+.title .offerings{
+    background-image: url(images/buffetCover.webp);
+    background-size: cover;
+    padding: 20px;
+}
+
+.title .offerings button{
+    border: none;
+    background-color: #e64125;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.title .offerings button:hover{
+    background-color: black;
+    scale: 1.1;
+}
+
+.title .offerings span{
+    color: white;
+}
+
+.categories .group{
+    border-left: none ;
+    border-bottom: none;
+}
+.categories .card .btn{
+    border: none;
+    background-color: #e64125;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.categories .card .btn:hover{
+    background-color: black;
+    scale: 1.1;
+}
+
+.form button{
+    border: none;
+    background-color: #e64125;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+.form button:hover{
+    background-color: black;
+    scale: 1.1;
+}
+
+.testimonials span{
+    background-color: black;
+    border: black 1px solid;
+}
+
+.vendor h4{
+    color: black;
+    text-decoration: none;
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+
+.vendor h4:hover{
+    color: white;
+    background-color: black;
+}
+
+.contact .submit{
+    border: none;
+    background-color: #e64125;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact .close{
+    border: none;
+    background-color: ghostwhite;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.contact input{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.contact .call{
+    border: none;
+    background-color: #e64125;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
