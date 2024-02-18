@@ -3,10 +3,31 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Lyt Meals Catering</title>
+    <meta name="description" content="Food Catering services">
+    <meta name="keywords" content="Food Catering, Buffet, Office Food, Party Food, Catering Platform">
+    <meta name="author" content="Lyt Meals">
+    <link rel="icon" type="image/png" href="images/logo.png" sizes="200*400">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+    <!-- Email Sender -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "2f0xknCP80dXvX_IO",
+      });
+   })();
+</script>
 
 <link rel="stylesheet" href="style.css">
 <script src="logic.js"></script>
@@ -17,14 +38,25 @@
         <div class="row title">
             <div class="col-12 col-md-6">
                 <img src="images/logo.png" alt="Lyt Meals">
-                <h1>Biggest Catering Platform in India</h1>
+                <h1>Biggest <span>Catering</span> Platform in India</h1>
+                <div class="services">
+
+                </div>
+                <img src="images/wordcloud.png" alt="Lyt Meals Catering Offerings" style="width: 60%;">
             </div>
             <div class="col-12 col-md-6 offerings">
-                <img src="images/wordcloud.png" alt="Lyt Meals Catering Offerings"><br>
-                <button>Call Us</button>
+              <div class="center">
+                <a href="tel:8595023824"><button>Call Us</button></a>
                 <br><span>OR</span><br>
                 <a href="#form"><button>Tell us about your occassion</button></a>
+              </div>
             </div>
+        </div>
+        <!-- Description -->
+        <div class="row">
+          <div class="col description">
+            Discover <span> authentic flavors and exquisite cuisines</span> with <span> India biggest catering platform.</span> From traditional feasts to modern delicacies, we connect you with top-rated caterers for <span> weddings, parties, and corporate events.</span> Explore diverse menus, seamless booking, and impeccable service, ensuring your special occasion is a culinary sensation. Whatever your occassion is, <span> we have a caterer for you.</span>
+          </div>
         </div>
         <!--Clients -->
         <div class="row">
@@ -32,9 +64,9 @@
                 <h2>Client we have Served</h2>
                 <img src="images/1.jpg" alt="Lyt Meals Clients">
                 <img src="images/2.jpg" alt="Lyt Meals Clients">
-                <img src="images/3.png" alt="Lyt Meals Clients">
+                <img src="images/3.jpg" alt="Lyt Meals Clients">
                 <img src="images/4.jpg" alt="Lyt Meals Clients">
-                <img src="images/5.png" alt="Lyt Meals Clients">
+                <img src="images/5.jpg" alt="Lyt Meals Clients">
                 <img src="images/6.jpg" alt="Lyt Meals Clients">
                 <img src="images/7.webp" alt="Lyt Meals Clients">
                 <img src="images/8.jpg" alt="Lyt Meals Clients">
@@ -44,23 +76,22 @@
                 <img src="images/12.jpg" alt="Lyt Meals Clients">
                 <img src="images/13.jpg" alt="Lyt Meals Clients">
                 <img src="images/14.jpg" alt="Lyt Meals Clients">
-                <img src="images/15.jpeg" alt="Lyt Meals Clients">
+                <img src="images/15.jpg" alt="Lyt Meals Clients">
                 <img src="images/16.png" alt="Lyt Meals Clients">
                 <img src="images/17.png" alt="Lyt Meals Clients">
-                <img src="images/18.jpg" alt="Lyt Meals Clients">
+                <img src="images/18.png" alt="Lyt Meals Clients">
                 <img src="images/19.jpg" alt="Lyt Meals Clients">
                 <img src="images/20.png" alt="Lyt Meals Clients">
                 <img src="images/21.png" alt="Lyt Meals Clients">
                 <img src="images/22.png" alt="Lyt Meals Clients">
                 <img src="images/23.jpg" alt="Lyt Meals Clients">
-                <img src="images/24.jpg" alt="Lyt Meals Clients">
             </div>
         </div>
         <!-- Caterers Catergories -->
-        <div class="row categories">
-            <div class="col">
+        <div class="row categories justify-content-center">
+            <div class="col-12 p-5 col-lg-10">
                 <div class="card-group">
-                    <div class="card group">
+                    <div class="card titlecard">
                         <img src="images/Buffet Caterers.png" class="card-img-top" alt="Lyt Meals Catering">
                       </div>
                       <div class="card">
@@ -74,7 +105,7 @@
                               <li>Star Chef</li>
                             </ul>
                           </p>
-                          <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
+                          <a href="#form" class="btn test" data-bs-toggle="" data-bs-target="#exampleModal">Contact</a> <!--Add modal in data-bs-toggle later-->
                         </div>
                         <div class="card-footer">
                           <small class="text-body-secondary">Starting at Rs 350/person</small>
@@ -91,7 +122,7 @@
                               <li>Star Chef</li>
                             </ul>
                           </p>
-                          <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
+                          <a href="#form" class="btn test" data-bs-toggle="" data-bs-target="#exampleModal">Contact</a> <!--Add modal in data-bs-toggle later-->
                       </div>
                       <div class="card-footer">
                         <small class="text-body-secondary">Starting at Rs 350/person</small>
@@ -108,7 +139,7 @@
                               <li>Star Chef</li>
                             </ul>
                           </p>
-                          <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
+                          <a href="#form" class="btn test" data-bs-toggle="" data-bs-target="#exampleModal">Contact</a> <!--Add modal in data-bs-toggle later-->
                       </div>
                       <div class="card-footer">
                         <small class="text-body-secondary">Starting at Rs 350/person</small>
@@ -125,7 +156,7 @@
                               <li>Star Chef</li>
                             </ul>
                           </p>
-                          <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact</a>
+                          <a href="#form" class="btn test" data-bs-toggle="" data-bs-target="#exampleModal">Contact</a> <!--Add modal in data-bs-toggle later-->
                       </div>
                       <div class="card-footer">
                         <small class="text-body-secondary">Starting at Rs 350/person</small>
@@ -138,83 +169,63 @@
         <div class="row form justify-content-center" id="form">
             <div class="col-md-6 col-12">
             <h3>Didn't find what you were looking for?</h3><br>
-            <button>Call Us</button>
+            <a href="tel:8595023824"><button>Call Us</button></a>
             <br><br>OR<br><br>
+
             <h4>Enter Your Requirement</h4>
-            <form class="row g-3 needs-validation" novalidate>
-              <div class="col-12">
-                <label for="validationCustom01" class="form-label">Name</label>
-                <input type="text" class="form-control" id="validationCustom01" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-
-              <div class="col-12">
-                <label for="validationCustom02" class="form-label">Phone Number</label>
-                <input type="text" class="form-control" id="validationCustom02" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
+            <form class="row g-3" id="form" action="index.html" onsubmit="return form() ">
+              <div class="col-6">
+                <label for="name" class="form-label">Name<span class="compulsary">*</span></label>
+                <input type="text" class="form-control" id="name">
               </div>
 
               <div class="col-6">
-                <label for="validationCustom03" class="form-label">Occassion</label>
-                <select class="form-select" id="validationCustom03">
+                <label for="phone" class="form-label">Phone Number<span class="compulsary">*</span></label>
+                <input type="text"  class="form-control" id="phone">
+              </div>
+
+              <div class="col-6">
+                <label for="occassion" class="form-label">Occasion</label>
+                <select class="form-select" id="occassion" onchange="display()">
                   <option selected disabled value="">Choose...</option>
-                  <option>Office Daily Meal</option>
-                  <option>Birthday</option>
-                  <option>House Party</option>
-                  <option>Pooja</option>
-                  <option>Office Party</option>
-                  <option>Festival</option>
-                  <option>Kitty Party</option>
-                  <option>Anniversary</option>
-                  <option>Pre-Wedding</option>
-                  <option>Others</option>
-
+                  <option class="option" value="com" >Office Daily Meal</option>
+                  <option class="option">Birthday</option>
+                  <option class="option">House Party</option>
+                  <option class="option">Pooja</option>
+                  <option class="option" value="com">Office Party</option>
+                  <option class="option">Festival</option>
+                  <option class="option">Kitty Party</option>
+                  <option class="option">Anniversary</option>
+                  <option class="option">Pre-Wedding</option>
+                  <option class="option">Others</option>
                 </select>
-                <div class="invalid-feedback">
-                  Please select a valid occassion.
-              </div>
               </div>
 
               <div class="col-6">
-                <label for="validationCustom04" class="form-label">Company</label>
-                <input type="text" class="form-control" id="validationCustom04">
-                <div class="invalid-feedback">
-                  Please provide a valid company.
-                </div>
+                <label for="noOfPeople" class="form-label">No. of People</label>
+                <input type="number" class="form-control" id="noOfPeople">
+              </div>
+
+              <div class="col-12" id="company">
+                <label for="comapany" class="form-label">Company Name</label>
+                <input type="text" class="form-control" id="comapany">
               </div>
 
               <div class="col-12">
-                <label for="validationCustom05" class="form-label">Address</label>
-                <input type="text" class="form-control" id="validationCustom05">
-                <div class="invalid-feedback">
-                  Please select a valid address.
-                </div>
+                <label for="address" class="form-label">Address</label>
+                <input type="text" class="form-control" id="address">
               </div>
 
               <div class="col-12">
-                <label for="validationCustom06" class="form-label">No. of People</label>
-                <input type="number" class="form-control" id="validationCustom06" >
-                <div class="invalid-feedback">
-                  Please provide valid number of people.
-                </div>
+                <label for="note" class="form-label">Additional Note</label>
+                <textarea id="note" class="form-control" cols="30" rows="3"></textarea>
               </div>
 
               <div class="col-12">
-                <label for="validationCustom07" class="form-label">Additional Note</label>
-                <textarea id="validationCustom07" class="form-control" cols="30" rows="3"></textarea>
-                <div class="invalid-feedback">
-                  Please provide the note.
-                </div>
-              </div>
-
-              <div class="col-12">
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn btn-primary" type="submit">Submit</button><br>
               </div>
             </form>
+            <span id="inputError"></span>
             </div>
         </div>
         <!-- Testimonials -->
@@ -260,71 +271,33 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Enter Phone Number</h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Enter Details</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form action="">
-          <input type="text" placeholder="Enter Phone Number">
+        <form action="index.html" onsubmit="return formotp()">
+          <input type="text" id="nameotp" placeholder="Enter Name">
+          <input type="text" id="phoneotp" placeholder="Enter Phone Number">
+          <input type="text" placeholder="Enter OTP" id="otp">
+          <button type="submit" id="submit" class="btn submit" data-bs-toggle="" data-bs-target="" >Submit</button><br>
+          <span id="inputErrorOtp"></span>
         </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn close" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn submit" data-bs-toggle="modal" data-bs-target="#exampleModal2">Submit</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Pop Up Form for OTP -->
-<div class="modal fade contact" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel2">Enter OTP</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form action="">
-          <input type="text" placeholder="Enter OTP">
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn close" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn submit" data-bs-toggle="modal" data-bs-target="#exampleModal3">Submit</button>
-      </div>
-    </div>
-  </div>
+<!-- Whatapp Icon -->
+<div class="whatsapp">
+  <a aria-label="Chat on WhatsApp"  target="_blank" href="https://wa.me/+918595023824?text=I'm%20looking%20for%20catering%20services"> <img alt="Chat on WhatsApp" src="images/WhatsAppButtonGreenSmall.png" />
+  </a>
+</div>
+  
+
 </div>
 
-<!-- Pop Up Form for Entry -->
-<div class="modal fade contact" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel3">Call the Outlet</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <button class="call">Call</button>
-        <br><span>OR</span><br>
-        <h4>Share the details with the outlet</h4>
-        <form action="">
-          <input type="text" placeholder="Name"><br>
-          <input type="text" placeholder="Phone"><br>
-          <input type="number" placeholder="No of People"><br>
-          <input type="text" placeholder="Address">
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn close" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn submit">Submit</button>
-      </div>
-    </div>
-  </div>
-</div>
 
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>

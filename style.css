@@ -17,22 +17,28 @@
     font-weight: bold;
 }
 
-.title .offerings img{
-    width: 60%;
-}
+
 
 .title .offerings{
     background-image: url(images/buffetCover.webp);
     background-size: cover;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title .offerings .center{
+    margin: 100px;
 }
 
 .title .offerings button{
     border: none;
     background-color: #e64125;
     color: white;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
+    font-size: 20px;
 }
 
 .title .offerings button:hover{
@@ -40,14 +46,32 @@
     scale: 1.1;
 }
 
-.title .offerings span{
-    color: white;
+.title span{
+    color: #e64125;
 }
 
-.categories .group{
+
+.title .offerings span{
+    color: #e64125;
+    font-size: 20px;
+}
+
+.categories .titlecard{
     border-left: none ;
     border-bottom: none;
 }
+
+.description{
+    font-size: 20px;
+    padding: 0px 50px;
+}
+
+.description span{
+    font-size: 25px;
+    color: #e64125;
+    font-weight: bold;
+}
+
 .categories .card .btn{
     border: none;
     background-color: #e64125;
@@ -120,4 +144,33 @@
     color: white;
     padding: 10px;
     border-radius: 5px;
+}
+
+#inputError,#inputErrorOtp{
+    color: red;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.compulsary{
+    color: #e64125;
+}
+
+#otp{
+    display: none;
+}
+
+#company{
+    display: none;
+}
+
+.whatsapp{
+    position: fixed;
+    top: 90%;
+    right: 0%;
+}
+
+.whatsapp img{
+    width: 200px;
 }
