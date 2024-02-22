@@ -13,8 +13,8 @@
 
 .client h2{
     margin: 20px;
-    font-family: Baskerville Old Face;
     font-weight: bold;
+    font-size: 30px;
 }
 
 
@@ -29,7 +29,8 @@
 }
 
 .title .offerings .center{
-    margin: 100px;
+    
+    margin: 100px 0px;
 }
 
 .title .offerings button{

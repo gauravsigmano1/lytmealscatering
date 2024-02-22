@@ -1,0 +1,4 @@
+1.Mailer set up for Vendors- later
+2.OTP verification -later
+3.Add testimonial
+4.Check seo tutorial to see if the page is indexable
